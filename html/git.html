@@ -9,27 +9,29 @@
 <article id="news-body" itemprop="articleBody">
 
     <p class="blue" style="color:blue">
-        Перед вами небольшая статья-шпаргалка,&nbsp; которая включает в себя команды удобные, но не всем знакомые
+        Перед вами небольшая статья-шпаргалка, которая включает в себя удобные, но не всем знакомые
         команды Git, которые могут стать вашими постоянными спутниками в разработке.
     </p>
     <p>
         1. <b class="red" style="color:red">git init</b>
     </p>
     <p>
-        Эта команда используется для клонирования проекта как репозитория git.
+        Эта команда создаёт в текущем каталоге новый подкаталог с именем .git , содержащий все необходимые файлы репозитория — структуру Git репозитория.
     </p>
     <p>
         <br>
     </p>
     <p>
-        2. <b class="red" style="color:red">git clone
-        <url>
-            <directory></directory>
-        </url>
-    </b>
+        2. <b class="red" style="color:red">git clone</b>
     </p>
     <p>
-        Эта команда клонирует репозиторий в новую директорию.&nbsp;
+        Эта команда клонирует репозиторий в новую директорию.
+    </p>
+    <p>
+        Если надо скопировать только файлы:
+    </p>
+    <p>
+        <code> git clone --depth=1 git://someserver/somerepo dir for my newrepo rm -rf !$/.git</code>
     </p>
     <p>
         <code> git config</code> — это удобная функция, которая используется для настройки значений конфигурации Git на
@@ -48,20 +50,6 @@
         <code> &nbsp;git config --global user.email "<a href="mailto:your_email@example.com">your_email@example.com</a>"</code>
     </p>
     <br>
-    <p>
-        Если надо скопировать только файлы:
-    </p>
-    <p>
-        <code> git clone --depth=1 git://someserver/somerepo dirformynewrepo </code>
-    </p>
-    <code> </code>
-    <p>
-        <code>
-            rm -rf !$/.git</code>
-    </p>
-    <p>
-        <br>
-    </p>
     <p>
         3. <b class="red" style="color:red">git remote add
         <repository>
