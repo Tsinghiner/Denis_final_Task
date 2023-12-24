@@ -1,8 +1,8 @@
 .logo {
-	 float: left;
+	 float: center;
 }
  nav {
-	 float: right;
+	 float: center;
 }
  nav ul {
 	 margin: 0;
